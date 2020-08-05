@@ -1,0 +1,28 @@
+<view class="body">
+	<view class="main">
+		<view class="banner">
+			<image src="{{dataCarbon.image}}"></image>
+		</view>
+
+		<view  class="title twoT">
+	
+			<rich-text nodes="{{dataCarbon.serveExplain}}"></rich-text>
+		</view>
+		<view  class="conent twoC">
+		<rich-text nodes="{{dataCarbon.caseExplain}}"></rich-text>
+		</view>
+		<view  class="list" wx:for="{{dataCarbon.childList}}">
+			<image src="../../static/imgs/chunk.png"></image>
+			<view>{{item}}</view>
+		</view>
+
+	</view>
+	<view class="button">
+	
+	<button class="name btn" open-type="contact" session-from="weapp" style="padding: 10rpx 10rpx;width: 100%;text-align: center;background-color:rgb(68,88,190);">在线咨询</button>
+	</view> 
+<view>
+<official-account></official-account>
+</view>
+
+</view>

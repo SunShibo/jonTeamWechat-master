@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+
+<view class="login-page">
+  <image class="logo" src="/static/imgs/beijing2.png"></image>
+  <button  open-type="getUserInfo" class="login_btn" bindtap="login">
+    <image src="/static/icon/wechat.png"></image>
+    <view class="btn_text">微信快捷登录</view>
+    
+  </button>
+
+<!-- 
+   <button open-type="getUserInfo" class="login_btn" bindtap="login2">
+    <image src="/static/icon/wechat.png"></image>
+    <view class="btn_text">微信快捷登录2</view>
+    
+  </button> -->
+
+  <view class="login-phone" bindtap="togglePhone">输入手机号码登录</view>
+</view>

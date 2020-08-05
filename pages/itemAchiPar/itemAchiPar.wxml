@@ -1,0 +1,34 @@
+<view class="body">
+	<view class="main">
+		<view class="item-name">
+			<view class="block">
+				<image class="imgOne" src="../../static/imgs/Iimg2.png"></image>
+				<view>
+					<view class="fontOne">{{projectInfo.title}}</view>
+					<view class="fontTwo">{{projectInfo.time}}</view>
+					<view class="fontThree">{{project.people}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="item-grade">
+			<view class="font-four">
+				整体评分
+			</view>
+			<view class="container">
+				<view class="comment1-description">
+					<view class="star-pos" style="display:flex;flex-direction:row;">
+						<view class="stars  {{flag>=1? 'on': ''}}" bindtap="changeColor1"></view>
+						<view class="stars  {{flag>=2? 'on': ''}}" bindtap="changeColor2"></view>
+						<view class="stars  {{flag>=3? 'on': ''}}" bindtap="changeColor3"></view>
+						<view class="stars  {{flag>=4? 'on': ''}}" bindtap="changeColor4"></view>
+						<view class="stars  {{flag>=5? 'on': ''}}" bindtap="changeColor5"></view>
+					</view>
+				</view>
+			</view>
+			<view class="textGrade">
+				<textarea class="textBlock" bindinput="bindTextAreaChange" placeholder="我要提出建议..." style="height: 8em" value="{{info}}" maxlength="{{noteMaxLen}}" focus />
+			</view>			
+		</view>
+		<view class="btn" bindtap="bindSubmit">提交</view>
+	</view>
+</view>

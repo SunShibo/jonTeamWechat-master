@@ -1,0 +1,24 @@
+ <import src="../../components/wxParse/wxParse.wxml" />
+ <view class="body">
+ 	<view class="main">
+ 		<view>
+ 		</view>
+ 		<view class="fontOne">{{msg}} | {{projectDetail.title}}</view>
+ 		<view class="fontTwo">{{projectDetail.formatDate}}</view>
+ 		<view class="fontThree">负责人：{{projectDetail.name}}</view>
+
+ 		<view class="content">
+			<template is="wxParse" data="{{wxParseData:content.nodes}}" />
+		</view>
+
+ 		<view class="conImg">
+ 			<image wx:for="{{imageList}}" src="{{item.image}}"></image>
+ 		</view>
+
+ 		<view wx:if="{{accessoryList!=null && accessoryList.length > 0}}" class="fontFive">附件：</view>
+ 		<view wx:if="{{accessoryList!=null && accessoryList.length > 0}}" class="fontFiveContent" wx:for="{{accessoryList}}"> <audio></audio>
+ 			{{item.name}}
+ 		</view>
+
+ 	</view>
+ </view>

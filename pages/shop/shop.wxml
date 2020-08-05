@@ -1,0 +1,56 @@
+<view class="body">
+
+	<view class="Vshop">
+	<scroll-view class="list" scroll-x style="background: #FFF;">
+		<view class="list">
+			<view class="item"   wx:for="{{serverList}}" wx:key="server"  data-id="{{item.id}}" bindtap="goType" data-index="{{index}}">
+			<!-- energy -->
+				<view class="name,{{index==eIndex?'energy':''}}"  >{{item.typeName}}</view>
+			</view>
+	
+		</view>
+</scroll-view>
+	
+		<view class="main">
+			<view class="mainOne"  wx:for="{{serverList[eIndex].child}}" >
+				<view class="MO-head mhead">
+					<h2>{{item.typeName}}</h2>
+					<view bindtap="goEnergy" data-typename="{{item.typeName}}" data-id="{{item.id}}">
+						了解更多
+						<image class="back" src="../../static/imgs/back.png" bindtap="goCarbonDetail" ></image>
+					</view>
+				</view>
+				<view class="line"></view>
+				<view class="block">
+		
+					<view class="Vblock" wx:for="{{item.child}}"  data-id="{{itemChild.id}}"  wx:for-item="itemChild" bindtap="goCarbonDetail" data-title="{{itemChild.title}}" >
+						<image src="{{itemChild.image}}"></image>
+						<view>{{itemChild.title}}</view>
+					</view>
+
+					<!-- <view class="Vblock"    >
+						<image bindtap="goCarbonDetail" src="../../static/imgs/beijing.png"></image>
+						<view>节能服务</view>
+					</view> -->
+
+					
+	
+
+
+	
+
+				</view>
+
+			</view>
+
+
+
+			
+
+
+
+			</view>
+	
+
+	</view>
+</view>

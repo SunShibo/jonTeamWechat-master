@@ -1,0 +1,20 @@
+<view class="body">
+	<view class="list">
+		<view class="item" wx:for="{{dataReport}}" >
+			<view bindtap="switchIndex" data-index="{{index}}" class="name {{eIndex==index?'energy':''}}">{{item.type}}</view>
+		</view>
+		
+	</view>
+	<view class="main">
+		<view class="block"  wx:for="{{dataReport[eIndex].child}}" wx:for-item="itemChild">
+
+			<image src="{{itemChild.type}}"></image>
+			<view class="font">
+				<view>{{itemChild.name}}</view>
+				<view bindtap="showFile" data-path="{{itemChild.path}}" >预览</view>
+			</view>
+
+		</view>
+
+	</view>
+</view>

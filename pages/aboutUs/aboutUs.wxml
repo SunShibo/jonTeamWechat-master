@@ -1,0 +1,121 @@
+<view class="body">
+	<view class="main">
+		<view class="head">
+			<view>
+				<image class="weIcon" src="../../static/imgs/banner1.png" style="height:112rpx;width:112rpx;"></image>
+			</view>
+			<view class="headTitle">
+				<view class="headTitleName">中竞集团</view>
+				<view class="headTitleVersions">版本：1.0.0</view>
+			</view>
+		</view>
+
+		<view class="content">
+			<view class="contentOne">
+				<view class="contentOneTitle title">集团简介</view>
+				<view class="contentOneImg">
+					<image src="../../static/imgs/banner1.png"></image>
+				</view>
+				<view class="contentOneText text">对企业（单位）的能源活动、工业生产过程等进行现场核查，准确识别二氧化碳排放边界及排放源，核证相关活动水平及排放因子数据，核算企业真实、客观的二氧化碳排放数据，出具有公信力的第三方核查/盘查报告，为企业(单位)碳排放履约和节能减碳工作提供支撑。</view>
+				<view></view>
+			</view>
+
+			<view class="contentTwo">
+				<view class="contentTwoTitle title">集团简介</view>
+					<view class="contentTwoText">
+						<view class="contentTwoTextTitle">
+							<view class="dot"></view>
+							<view class="LittleTitle">中竞愿景</view>
+						</view>
+						<view class="LittleText">人与自然和谐共处</view>
+				</view>
+				
+				<view class="contentTwoText">
+						<view class="contentTwoTextTitle">
+							<view class="dot"></view>
+							<view class="LittleTitle">中竞使命</view>
+						</view>
+						<view class="LittleText">致力于能源与环境可持续发展</view>
+				</view>
+				<view class="contentTwoText">
+						<view class="contentTwoTextTitle">
+							<view class="dot"></view>
+							<view class="LittleTitle">中竞战略目标</view>
+						</view>
+						<view class="LittleText">致力于能源与环境可持续发展</view>
+				</view>
+				<view class="contentTwoText">
+						<view class="contentTwoTextTitle">
+							<view class="dot"></view>
+							<view class="LittleTitle">中竞价值观</view>
+						</view>
+						<view class="LittleText text">
+							<view><h3>做人：</h3>诚 信、协 作、自 律</view>
+							<view><h3>做是：</h3>敬 业、标 准、 效 率</view>
+							<view><h3>做企业：</h3>创 新、责 任 、发 展</view>
+						</view>
+				</view>																																																																																																																																																																																																					
+			</view>
+			<view class="contentThree">
+				<view class="contentThreeTitle title">集团简介</view>
+				<view class="contentThreeText"><text>国家高新技术企业、中关村高新技术企业
+
+工程咨询资质
+
+建筑机电安装工程专业承包资质
+
+电子与智能化工程专业承包资质
+
+中央国家机关工程定点实施单位（机电工程）
+
+国家发改委、财政部、工信部首批备案节能服务公司
+
+国家发改委、财政部首批备案的合同能源管理节能服务公司
+
+工信部首批推荐的工业和通信业合同能源管理节能服务公司
+
+全国工业领域电力需求侧管理第一批服务机构
+
+北京市发改委推荐的碳排放权交易第三方核查机构
+
+北京市发改委推荐的能源审计、节能量审核咨询机构
+
+北京市发改委推荐的清洁生产审核咨询机构
+
+北京市发改委推荐的能源管理体系和碳排放管理体系
+
+第三方评价机构
+
+北京市发改委节能减排和应对气候变化领域业务支撑单位
+
+北京市重点行业领域主管部门2012年度节能目标责任评价机构（16个委办局）
+
+北京市重点行业领域主管部门“十二五” 规划中期评估机构
+
+全国节能减排标准化技术联盟理事成员单位
+
+北京市能源学会副会长单位
+
+全国节能先进典型单位（国家节能中心评定）
+
+中关村信用双百企业
+
+中国建筑节能减排最具责任企业
+
+中国建筑领域节能服务十大品牌
+
+全国质量稳定信誉保证企业
+
+中国知名品牌、国家合格评定质量信得过好产品、质量信誉双保障产品
+
+实施项目被评为北京市“节能减排全民行动教育示范基地”项目
+
+实施项目被评为“2017年度首都蓝天行动科技示范工程”
+
+屡获北京能源学会年度优秀研究成果一等奖、二等奖
+同时，																																															集团以真诚的服务和优质的项目质量赢得
+了客户的充分认可和一致好评，历年来收到客户寄来的感谢信及赠予的锦旗逾百件，其中大部分客户已聘请																																															集团担任节能减排顾问单位。</text></view>
+			</view>
+		</view>
+	</view>
+</view>

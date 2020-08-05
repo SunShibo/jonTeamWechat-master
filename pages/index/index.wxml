@@ -1,0 +1,76 @@
+<view class="Vindex">
+
+	<head title="首页" />
+	<view class="top">
+		<image src="../../static/imgs/beijing.png" mode="widthFix"></image>
+	</view>
+	<view class="wp">
+		<view class="m-card mt">
+			<view class="banner">
+				<swiper bindchange="swpierChange" interval="3000" circular autoplay="true">
+					<block wx:for="{{bannerList}}" wx:key="id">
+						<swiper-item>
+							<image bindtap="goPath" data-skip="{{item.skip}}" data-skippath="{{item.skipPath}}" data-id="{{item.id}}" src="{{item.image}}"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+				<view class="dots">
+					<text>{{current+1}}/{{bannerList.length}}</text>
+				</view>
+			</view>
+			<view class="list">
+				<view class="item" bindtap="goShop">
+					<image src="../../static/imgs/1.png" mode="widthFix"></image>
+					<view class="name">服务商城</view>
+				</view>
+				<view class="item" bindtap="goWin">
+					<image src="../../static/imgs/2.png" mode="widthFix"></image>
+					<view class="name">典型案例</view>
+				</view>
+				<view class="item" bindtap="goRead">
+					<image src="../../static/imgs/3.png" mode="widthFix"></image>
+					<view class="name">政策解读</view>
+				</view>
+				<view class="item" bindtap="goReport">
+					<image src="../../static/imgs/4.png" mode="widthFix"></image>
+					<view class="name">报告模板</view>
+				</view>
+
+			</view>
+		</view>
+
+		<view class="main">
+			<view class="module" bindtap="goConsult">
+				<view class="MO-head mhead">
+					<h2>{{industryName}}</h2>
+					<view>查看更多<image class="back" src="../../static/imgs/back.png"></image>
+					</view>
+				</view>
+				<view class="MO-content">
+					<image class="OCon-img" src="{{industry.image}}" bindtap="goConsultDetail" data-id="{{industry.id}}"></image>
+					<view class="OCon-font">
+						<view>{{industry.title}}</view>
+						<view>{{industry.introduction}}【更多】</view>
+					</view>
+				</view>
+			</view>
+
+			<view class="module" wx:for="{{serverList}}" wx:key="server">
+				<view class="mhead">
+					<h2 wx:if="{{index!=0}}">{{item.typeName}}</h2>
+					<h3 class="mheadBig" wx:else>推荐服务</h3>
+					<view bindtap="goShop">查看更多
+						<image class="back" src="../../static/imgs/back.png">
+						</image>
+					</view>
+				</view>
+				<view class="i-content">
+					<view class="i-item" wx:for="{{item.list}}" wx:key="serverInfo" wx:for-item="serverItem">
+						<image bindtap="goServerDetail" data-title="{{serverItem.title}}" data-id="{{serverItem.id}}" src="{{serverItem.image}}"></image>
+						<view>{{serverItem.title}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,24 @@
+<view class="body"> 
+  <view class="main">
+    <view class="block">
+      <image src="../../static/img1.png"></image>
+      <view>能源审计</view>
+    </view>
+    <view class="block">
+      <image src="../../static/img2.png"></image>
+      <view>节能量审计</view>
+    </view>
+    <view class="block">
+      <image src="../../static/img3.png"></image>
+      <view>节能诊病</view>
+    </view>
+    <view class="block">
+      <image src="../../static/img4.png"></image>
+      <view>能源管理体系建设</view>
+    </view>
+    <view class="block">
+      <image src="../../static/img5.png"></image>
+      <view>节能诊病</view>
+    </view>
+  </view>
+</view> 

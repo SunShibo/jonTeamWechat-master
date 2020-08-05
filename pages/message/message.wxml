@@ -1,0 +1,15 @@
+ <view class="body">
+
+ 	<view class="main" wx:if="{{dataMess.length}}" >
+ 		<view class="block" bindtap="unread"    data-id="{{item.id}}" data-isread="{{item.isRead}}" wx:for="{{dataMess}}">
+
+ 			<view class="fontOne">{{item.title}}</view>
+ 			<view class="fontTwo">{{item.content}}</view>
+ 			<view class="fontThree">{{item.createTime}}</view>
+ 			<view class="fontFour">{{item.address}}</view>
+ 			<view class="{{item.isRead=='yes'?'tran':''}}">
+ 			</view>
+ 		</view>
+ 	</view>
+	 <view  class="messageWarning" wx:else>暂无消息</view>
+ </view>

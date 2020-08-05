@@ -1,0 +1,63 @@
+ .body {
+   background: #F2F3F8;
+   min-height: 100vh;
+   width: 100%;
+ }
+
+ .list {
+   white-space: nowrap;
+   margin-bottom: 24rpx;
+ }
+
+ .list .item {
+   padding: 0 70rpx;
+   display: inline-block;
+ }
+
+ .list .item image {
+   display: block;
+   width: 96rpx;
+   margin: 0 auto;
+ }
+
+ .name {
+   font-size: 28rpx;
+   font-weight: 400;
+   color: rgba(44, 43, 41, 1);
+   text-align: center;
+   padding: 32rpx 0rpx;
+   border-bottom: 6rpx solid transparent;
+
+ }
+
+ .energy {
+   border-bottom: 6rpx solid #3F58BE;
+ }
+
+ .main {
+   margin: 0 auto;
+   width: 670rpx;
+   background: #FFF;
+   padding: 20rpx;
+   margin: 20rpx;
+ }
+
+ .block {
+   display: inline-block;
+   margin-bottom: 24rpx;
+   margin-left: 25rpx;
+   width: 300rpx;
+ }
+
+
+
+ .block>image {
+   height: 210rpx;
+   width: 294rpx;
+ }
+
+ .block>view {
+   padding-left: 20rpx;
+   font-size: 28rpx;
+   color: rgba(62, 64, 75, 1);
+ }

@@ -1,0 +1,17 @@
+<import src="../../components/wxParse/wxParse.wxml"/>
+<view class="body">
+    <view class="main">
+        <image class="main-img" src="{{detData.image}}"></image>
+        <view class="out">
+            <view class="font-one">{{detData.title}}</view>
+            <view class="font-two">{{time}}</view>
+            <view class="font-three">来源：{{detData.source}}</view>
+            <view class="fontFourLabel">
+            <view class="font-four" wx:for="{{label}}" wx:key="index">{{item}}</view>
+            </view>
+        </view>
+        <view class="content">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view>    
+    </view>
+</view>

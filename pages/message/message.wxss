@@ -1,0 +1,72 @@
+.body {
+  background: #F2F3F8;
+  min-height:100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  background: #FFF;
+  width: 702rpx;
+  margin: 24rpx;
+}
+
+.block {
+  margin: 0rpx 24rpx;
+  height: 244rpx;
+  width: 654rpx;
+  border-top: 2rpx solid #F2F3F8;
+  position: relative;
+  z-index: 1;
+}
+.tran{
+  z-index: 200;
+  background:rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+
+}
+.messageWarning{
+  font-size: 50rpx;
+  margin-left: 270rpx;
+  margin-top: 370rpx;
+  color: rgba(143, 126, 142, 0.7);  
+  word-spacing: 3rpx;
+  letter-spacing: 3rpx;
+}
+.fontOne {
+  width: 100%;
+  height: 40rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  margin-top: 32rpx;
+  color: #3E404B;
+  line-height: 40rpx;
+}
+
+.fontTwo {
+  font-size: 28rpx;
+  color: #696C7F;
+  width: 100%;
+  height: 80rpx;
+  margin: 16rpx 0rpx;
+  overflow: hidden;
+  font-family: PingFangSC-Regular, PingFang SC;
+
+}
+
+.fontThree {
+  font-size: 24rpx;
+  color: #AEAFBA;
+  display: inline-block;
+  margin-right: 24rpx;
+}
+
+.fontFour {
+  font-size: 24rpx;
+  color: #AEAFBA;
+  display: inline-block;
+}
+

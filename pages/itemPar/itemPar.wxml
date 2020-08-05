@@ -1,0 +1,69 @@
+<view class="body">
+	<view class="main">
+		<view class="title">
+			<view class="titleOne">{{itemDetail.title}}</view>
+			<view class="titleTwo">同步更新项目最新进度</view>
+			<view class="date">{{dateTime}}</view>
+		</view>
+
+		<view wx:if="{{isHave}}">
+			<view class="plan">
+				<view>
+					<view class="planOne">开始时间</view>
+					<view class="planTwo">{{startTime}}</view>
+
+
+					<view class="base-plan-item plan-font-title">剩余工期</view>
+					<view class="base-plan-item plan-font-value">50</view>
+				</view>
+				<view>
+					<view class="planThree">总进度{{progress}}%</view>
+					<view class="planLine">
+						<image src="../../static/imgs/itemParB.png"></image>
+					</view>
+				</view>
+				<view>
+					<view class="planFour">预计结束时间</view>
+					<view class="planFive">{{endTime}}</view>
+
+
+					<view class="base-plan-item plan-font-title">总工期</view>
+					<view class="base-plan-item plan-font-value">50</view>
+				</view>
+			</view>
+			<view class="conentMain">
+				<view class="{{isFlag==index?'lastItem':'conLine'}}" data-id="{{item.projectInfoId}}" data-msg="{{item.projectItemStatus}}" wx:for="{{projectItemDetail}}" bindtap="goItemParCon">
+					<view class="conent">
+						<view class="leftCircle">
+							<image class="firstText" src="{{item.circlePath}}"></image>
+						</view>
+						<view>
+							<view class="conentOne">{{(index + 1) < 10 ? '0' + (index + 1) : index + 1}}  {{item.title}}</view>
+							<view class="conentTwo">{{item.projectItemStatus}} | 进度： {{100-index}}%</view>
+							<view class="conentThree">{{item.name}}</view>
+						</view>
+						<image class="conImg" src="{{item.image}}"></image>
+					</view>
+				</view>
+			</view>
+
+			<view class="introduce">
+				<image class="via" src="{{staffBO.head}}"></image>
+				<view class="right">
+					<view class="name">{{staffBO.name}}</view>
+					<view class="company">公司：{{staffBO.teamName}}</view>
+					<view class="position">职位：{{staffBO.position}}</view>
+					<view class="phone">电话：<text class="phoneNumber" data-phone="{{staffBO.phone}}" bindtap="callPhone">{{staffBO.phone}}</text> </view>
+				</view>
+				<image class="topRight" src="../../static/imgs/topRight.png"></image>
+			</view>
+		</view>
+
+		<view wx:else>
+			该项目下暂无数据
+		</view>
+
+
+
+	</view>
+</view>

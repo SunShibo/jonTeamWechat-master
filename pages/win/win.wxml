@@ -1,0 +1,19 @@
+ <view class="body">
+	<!-- 动态菜单 使用scroll-view 实现 -->
+	<scroll-view class="list" scroll-x style="background: #FFF;">
+		<block wx:for="{{typeData}}" wx:key="index">
+			<view class="item" bindtap="navClick" data-typeid="{{item.id}}" data-index="{{index}}">
+				<view class="name {{navIndex===index?'energy':''}}">{{item.typeName}}</view>
+			</view>
+		</block>
+	</scroll-view>
+
+ 	<view class="main">
+ 		<block wx:for="{{listData}}" wx:key="id" wx:for-index="chIndex" wx:for-item="chItem">
+		 	<view class="block" bindtap="goWinBackup"  data-item="{{chItem}}">
+ 				<image src="{{chItem.image}}"></image>
+ 				<view>{{chItem.projectName}}</view>
+	 		</view>	
+		 </block>
+ 	</view>
+ </view>

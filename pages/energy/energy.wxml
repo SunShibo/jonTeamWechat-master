@@ -1,0 +1,9 @@
+<view class="body">
+	<view class="main">
+		<view class="block" wx:for="{{dataList}}" bindtap="goCarbon" data-title="{{item.title}}" data-id="{{item.id}}" >
+			<image src="{{item.image}}"></image>
+			<view>{{item.title}}</view>
+		</view>
+	
+	</view>
+</view>

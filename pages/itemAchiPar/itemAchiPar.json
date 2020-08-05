@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText":"项目详情",
+  "navigationBarTextStyle":"white",
+  "backgroundColor": "#F2F3F8",
+  "backgroundTextStyle": "light"
+}

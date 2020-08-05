@@ -1,0 +1,42 @@
+<view class="body">
+<view class="main">
+<view class="name">
+  <view class="icon"><image src="../../static/imgs/companyIcon.png"></image></view>
+  <view class="title">公司名称：</view>
+  <view class="content">中竞同创能源环境科技集团股份有限公司</view>
+</view>
+<view class="hotPhone">
+  <view class="icon"><image src="../../static/imgs/hotPhone.png"></image></view>
+  <view class="title">服务热线：</view>
+  <view data-serverphone="400-188-1606" class="content" style="color:rgb(64,88,190);text-decoration:underline;" bindtap="serverPhnone">400-188-1606</view>
+</view>
+<view class="hotPhone">
+  <view class="icon"><image src="../../static/imgs/phone.png"></image></view>
+  <view class="title">联系电话：</view>
+  <view class="content"> <text style="color:rgb(64,88,190);text-decoration:underline;"  bindtap="callPhone" data-callphone="010-85407835"> 010-85407835/7869/0237
+(工作日9:00-17:30)</text></view>
+</view>
+<view class="phone">
+  <view class="icon"><image src="../../static/imgs/webPage.png"></image></view>
+  <view class="title">网址：</view>
+  <view class="content">www.jointeam6.com</view>
+</view>
+<view class="webPage">
+  <view class="icon"><image src="../../static/imgs/e-mail.png"></image></view>
+  <view class="title">邮箱：</view>
+  <view class="content">zjtc@jointeam6.com</view>
+</view>
+<view class="e-mail">
+  <view class="icon"><image src="../../static/imgs/address.png"></image></view>
+  <view class="title">地址：</view>
+  <view class="content">北京市丰台区丰台科技园华夏幸福创新中心C座5层</view>
+</view>
+<view class="webPage">
+  <view class="icon"><image src="../../static/imgs/postcode.png"></image></view>
+  <view class="title">邮编：</view>
+  <view class="content">100076</view>
+</view>
+
+
+</view>
+</view>

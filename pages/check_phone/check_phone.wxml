@@ -1,0 +1,11 @@
+<!--pages/check_phone/check_phone.wxml-->
+<view class="phone-page">
+  <view class="p-title">请输入手机号码</view>
+  <view class="p-tips">为方便取得联系，请输入您的常用手机号码</view>
+
+  <view class="p-input">
+    <input class="input" type="number" maxlength="11" bindinput="phoneInput" confirm-type="done" placeholder="请输入手机号" placeholder-style="color: #8b8b8b" />
+  </view>
+
+  <button class="next-btn" bindtap="next" disabled="{{disabled_btn}}">下一步</button>
+</view>

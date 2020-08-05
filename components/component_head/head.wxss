@@ -1,0 +1,30 @@
+view, scroll-view, swiper, button, input, textarea, label, navigator, image {
+  box-sizing: border-box;
+}
+
+.nav {
+  min-height: 0px;
+  color: #fff;
+  z-index: 999;
+  position: relative;
+  background: transparent;
+  border-radius: 80rpx 80rpx 0 0;
+}
+
+.con {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

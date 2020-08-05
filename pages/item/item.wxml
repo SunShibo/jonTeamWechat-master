@@ -1,0 +1,46 @@
+
+<head style= "text-align=center;" title="项目" />
+<view class="body">
+	<view>
+		<view class="title">
+			<view data-index="0" class="{{!show? 'active': ''}}" bindtap="showItemAchi">进行中</view>
+			<view data-index="1" class="{{show?'active': ''}}" bindtap="showItemAchi">已完成</view>
+		</view>
+		<view class="main" wx:if="{{!show}}">
+			<view class="block" data-msg="{{item}}" bindtap="goItemPar" wx:for="{{itemPar}}" wx:key="project">
+				<view>
+					<view class="fontOne">{{item.title}}</view>
+					<view class="fontTwo">{{item.time}}</view>
+					<view class="fontThree">{{item.conent}}</view>
+					<view class="fontFour">{{item.people}}</view>
+				</view>
+				<image class="imgOne" src="{{item.imgPath}}"></image>
+			</view>
+		</view>
+		<view class="main" wx:else>
+			<view class="block" bindtap="goItemAchiPar" wx:key="id" wx:for="{{itemPar}}" wx:key="finishProject" data-projectid="{{item.projectId}}" data-isevaluate="{{item.isEvaluate}}">			
+				<view>
+					<view class="achiFontOne">{{item.title}}</view>
+					<view wx:if="{{item.gradeStar != null && item.gradeStar != ''}}">
+						<view class="achiFontTwo">评分：</view>
+						<view class="gradeStar" wx:key="gradeStar" wx:for="{{item.gradeStar}}">
+							<view>
+								<image src="../../static/imgs/star1.png"></image>
+							</view>
+						</view>
+					</view>
+					<view wx:if="{{item.gradeStar == null || item.gradeStar == ''}}">
+						<view class="achiFontTwo">评分：</view>
+						<view class="achiFontTwo">暂无</view>
+					</view>
+					<view  class="commit">
+						<view class="achiFontThree">评价：</view>
+						<view class="achiFontFour">{{item.gradeConent == null ? '暂无' : item.gradeConent}}</view>
+					</view>
+					
+				</view>
+				<image class="achiImgOne" src="{{item.imgPath}}"></image>
+			</view>
+		</view>
+	</view>
+</view>

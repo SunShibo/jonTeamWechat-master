@@ -1,0 +1,16 @@
+<!--pages/phone_send/phone_send.wxml-->
+<view class="phone-page">
+  <view class="p-title">请输入手机号码</view>
+  <view class="p-tips">验证码已发送至手机</view>
+
+  <view class="p-tips">+86{{phoneNumber}}</view>
+
+  <view class="p-send">
+    <view class="p-tips">6位数字验证码</view>
+    <view class="send-time" bindtap="sendBtn">{{sendBtnText}}</view>
+  </view>
+
+  <view class="send-code">
+    <input class="send-code-item" placeholder="请输入验证码" bindinput="codeInput" type="number" maxlength="6" />
+  </view>
+</view>

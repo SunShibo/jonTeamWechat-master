@@ -1,0 +1,23 @@
+ <view class="body">
+
+ 	<view class="main">
+ 		<view class="head">
+ 			<view>
+ 				政策解读
+ 			</view>
+ 		</view>
+ 		<view class="block"   data-id="{{item.id}}" bindtap="goReadPar" wx:for="{{list}}"
+			  wx:key="index">
+ 			<image class="imgOne" src="{{item.image}}"></image>
+
+ 			<view class="content">
+ 				<view class="fontOne">{{item.title}}</view>
+ 				<view class="fontTwo">{{item.introduction}}</view>
+         <view class="out">
+ 				<view class="fontThree">{{item.updateTime}}</view>
+ 				<view class="fontFour">来源：{{item.source}}</view>
+         </view>
+ 			</view>
+ 		</view>
+ 	</view>
+ </view>

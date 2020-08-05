@@ -1,0 +1,63 @@
+<view class="body">
+	<view class="top">
+		<image class="beijing" src="../../static/imgs/beijing.png" mode="widthFix"></image>
+		<text style="padding-top:{{height3}}px;line-height:{{height2}}px">我的</text>
+		<view class="via">
+			<image wx:if="{{showItem}}" bindtap="login" class="viaImg" src="{{userInfo.head}}"></image>
+			<image wx:else bindtap="login" class="viaImg" src="../../static/imgs/timg.png"></image>
+			<view bindtap="login" class="name">{{showItem ? userInfo.name : '去登录'}}</view>
+		</view>
+	</view>
+	<view class="list">
+		<view class="list-item" wx:if="{{showItem}}">
+			<image class="icon" src="../../static/imgs/mineImg1.png"></image>
+			<view class="line">
+				<view>单位名称</view>
+			<view class="company">{{userInfo.company}}</view>
+			</view>
+		</view>
+		<view class="list-item"wx:if="{{showItem}}">
+			<image class="icon" src="../../static/imgs/mineImg2.png"></image>
+			<view class="line" bindtap="goMessagePage">
+				<view>消息管理</view>
+				<image class="back" src="../../static/imgs/back.png"></image>
+			</view>
+
+		</view>
+		<view class="list-item">
+			<image class="icon" src="../../static/imgs/mineImg3.png"></image>
+			<view class="line" bindtap="goHelp">
+				<view>帮助与反馈</view>
+				<image class="back" src="../../static/imgs/back.png"></image>
+			</view>
+
+		</view>
+		<view class="list-item" bindtap="goAbout">
+			<image class="icon" src="../../static/imgs/mineImg4.png"></image>
+			<view class="line">
+				<view>关于中竞</view>
+				<image class="back" src="../../static/imgs/back.png"></image>
+			</view>
+
+		</view>
+		<view class="list-item" bindtap="goCallUS">
+			<image class="icon" src="../../static/imgs/mineImg5.png"></image>
+			<view class="line" >
+				<view>联系我们</view>
+				<image class="back" src="../../static/imgs/back.png"></image>
+			</view>
+
+		</view>
+
+		<view class="out" bindtap="logout" wx:if="{{showItem}}">
+			退出登录
+		</view>
+	</view>
+
+
+
+
+
+
+
+</view>

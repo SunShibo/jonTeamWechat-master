@@ -1,0 +1,122 @@
+.Vshop{
+  min-height: 100vh;
+  width: 100%;
+  background: #F2F3F8;
+  overflow: hidden;
+}
+
+.list {
+  background: white;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.list {
+  white-space: nowrap;
+  margin-bottom: 24rpx;
+}
+
+.list .item {
+  padding: 0 15rpx;
+  display: inline-block;
+}
+
+
+
+.list .item image {
+  display: block;
+  width: 96rpx;
+  margin: 0 auto;
+}
+
+.name{
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(44, 43, 41, 1);
+  text-align: center;
+  margin: 0rpx 32rpx;
+  padding: 32rpx 0rpx;
+  border-bottom: 6rpx solid transparent;
+
+}
+.energy{
+    border-bottom: 6rpx solid #3F58BE;
+}
+.absolute{
+  position: absolute;
+  top: 200rpx;
+  height: 20vh;
+  width: 10vh;
+}
+.absolute>navigator{
+  margin: 20rpx;
+}
+.back{
+  height: 20rpx;
+  width: 10rpx;
+  margin-left: 8rpx;
+}
+
+.mhead{
+  padding: 24rpx 0rpx;
+  border-bottom:2rpx solid  #F2F3F8 ;
+}
+.mhead>h2{
+  font-size: 36rpx;
+  color: #3E404B;
+  padding: 0rpx 24rpx;
+  border-left: 8rpx solid #3F58BE;
+  position:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mhead>view{
+  float: right;
+  color: #696C7F;
+  font-size: 28rpx;
+  margin: 0rpx 24rpx;
+}
+.main{
+  margin:24rpx;
+}
+.mainOne{
+  margin-bottom: 24rpx;
+  background:#FFFFFF;
+}
+.mainTwo{
+  margin-bottom: 24rpx;
+  background:#FFFFFF;
+}
+.mainThree{
+  background:#FFFFFF;
+}
+
+.block{
+  height: 260rpx;
+  margin: 24rpx;
+  color: #3E404B;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.Vblock{
+  float: left;
+  margin-left: 20rpx;
+}
+
+.mid{
+  margin: 0px 24rpx;
+}
+.Vblock image{
+  width: 202rpx;
+  height:166rpx;
+}
+.Vblock view{
+  text-align: center;
+}
+
+
+  

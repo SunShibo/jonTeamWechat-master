@@ -1,0 +1,65 @@
+.body {
+  background: #F2F3F8;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  background: #FFF;
+  padding: 40rpx;
+  margin: 24rpx;
+}
+
+.text{
+  margin: 40rpx 0rpx 24rpx 0rpx;
+}
+.input {
+  height: 32rpx;
+  width: 574rpx;
+  padding: 24rpx;
+  border: 2rpx solid #BBB;
+}
+
+.titleFail{
+  height: 32rpx;
+  width: 574rpx;
+  padding: 24rpx;
+  border: 3rpx solid red;
+}
+
+.conText {
+  height: 272rpx;
+  width: 574rpx;
+  padding: 24rpx;
+  border: 2rpx solid #BBB;
+}
+
+.contentFail {
+  height: 272rpx;
+  width: 574rpx;
+  padding: 24rpx;
+  border: 4rpx solid #BBB;
+}
+
+textarea{
+  height: 250rpx;
+width: 574rpx;
+
+}
+.textareaCounter{
+  float: right;
+  color: #C9CBD7;
+}
+
+.btn {
+  width: 702epx;
+  height: 112rpx;
+  display: flex;
+  font-size: 32rpx;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background: #3F58BE;
+  color: #FFF;
+  margin: 48rpx 24rpx;
+}

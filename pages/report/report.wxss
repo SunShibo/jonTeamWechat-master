@@ -1,0 +1,87 @@
+.body {
+  background: #F2F3F8;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.list {
+  background: #FFF;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+}
+
+.list .item {
+  width: 33.33%;
+}
+
+.list .item image {
+  display: block;
+  width: 96rpx;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(44, 43, 41, 1);
+  text-align: center;
+  margin: 0rpx 32rpx;
+  padding: 32rpx 0rpx;
+  border-bottom: 6rpx solid transparent;
+
+}
+
+.energy {
+  border-bottom: 6rpx solid #3F58BE;
+}
+
+.main {
+  background: #FFF;
+  padding: 0rpx 24rpx;
+  margin: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 654rpx;
+  height: 180rpx;
+  position: relative;
+  padding: 24rpx 0rpx;
+  border-bottom: 2rpx solid #F2F3F8;
+}
+
+.block>image {
+  height: 180rpx;
+  width: 180rpx;
+  margin-right: 24rpx;
+}
+
+.block>view {
+  display: inline-block;
+  position: absolute;
+}
+
+.font>view:nth-child(1) {
+  height: 96rpx;
+  margin-bottom: 28rpx;
+  color: #3E404B;
+  font-size: 32rpx;
+
+}
+
+.font>view:nth-child(2) {
+  height: 40rpx;
+  width: 92rpx;
+  font-size: 28rpx;
+  color: #3F58BE;
+  padding: 8rpx 26rpx;
+  border: 2rpx solid #F2F3F8;
+  text-align: center;
+}

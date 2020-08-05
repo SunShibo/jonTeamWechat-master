@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "head": "/components/component_head/head"
+  },
+  "navigationStyle": "custom",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle": "dark"
+}

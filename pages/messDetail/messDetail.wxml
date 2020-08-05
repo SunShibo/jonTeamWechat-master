@@ -1,0 +1,13 @@
+<view class="body">
+<view class="main">
+    <view class="banner">
+      <image src="../../static/imgs/Iimg4.png"></image>
+    </view>
+    <view class="title">
+    {{messageInfo.title}}
+    </view>
+    <view class="conent">
+      {{messageInfo.content}}
+    </view>
+</view>
+</view>

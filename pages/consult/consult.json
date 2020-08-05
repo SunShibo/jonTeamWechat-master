@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText":"行业资讯",
+  "navigationBarTextStyle":"white",
+  "backgroundColor": "#F2F3F8",
+  "backgroundTextStyle": "light"
+}

@@ -1,0 +1,18 @@
+ <view class="body">
+ 	<view class="main">
+ 		<view class="banner">
+ 			<image src="{{detailData.image}}"></image>
+ 		</view>
+ 		<view class="title">项目介绍</view>
+ 		<rich-text class="conent" nodes="{{detailData.projectIntroduce}}">
+ 			I have detailed below the most cost effective forms of internet marketing to advertising your business using your company website. HTPcompany.com provides marketing, Internet advertising, search engine optimization and sales consulting for businesses, web site promotion and lead generation. Brought to you In this day and age, a lot of things have changed from how they used to be, which can be new and exciting for most.
+ 		</rich-text>
+ 		<view class="title">
+ 			成功效果
+ 		</view>
+
+ 		<rich-text class="conent" nodes="{{detailData.result}}">
+ 			I have detailed below the most cost effective forms of internet marketing to advertising your business using your company website. HTPcompany.com provides marketing, Internet advertising, search engine optimization and sales consulting for businesses, web site promotion and lead generation. Brought to you In this day and age, a lot of things have changed from how they used to be, which can be new and exciting for most.
+ 		</rich-text>
+ 	</view>
+ </view>

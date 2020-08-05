@@ -1,0 +1,40 @@
+/* pages/phone_send/phone_send.wxss */
+
+/* pages/check_phone/check_phone.wxss */
+
+.phone-page {
+  padding: 30rpx 20rpx 0;
+}
+
+.p-title {
+  font-size: 35rpx;
+  margin-bottom: 10rpx;
+  font-weight: 600;
+}
+
+.p-tips {
+  font-size: 22rpx;
+  color: #838689;
+}
+
+.p-send {
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-send .send-time {
+  color: #7B87A0;
+  font-size: 22rpx;
+}
+
+.send-code {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.send-code .send-code-item {
+  border-bottom: 1rpx #D5D5D5 solid;
+  padding: 20rpx;
+}

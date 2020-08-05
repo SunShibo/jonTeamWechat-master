@@ -1,0 +1,62 @@
+@import "../../components/wxParse/wxParse.wxss";
+ 
+ .body {
+   background: #F2F3F8;
+   padding: 24rpx;
+   overflow: hidden;
+   min-height: 100vh;
+ }
+
+ .main {
+   background: #fff;
+   padding: 12rpx;
+ }
+
+ .fontOne {
+   color: #3E404B;
+   font-size: 36rpx;
+   margin: 12rpx 0rpx 24rpx 12rpx;
+ }
+
+ .fontTwo {
+   font-size: 28rpx;
+   color: #3E404B;
+   display: inline-block;
+   margin: 0rpx 24rpx 0rpx 12rpx;
+ }
+
+ .fontThree {
+   font-size: 28rpx;
+   color: #3E404B;
+   display: inline-block;
+ }
+
+ .content {
+   margin-top: 40rpx;
+   font-size: 28rpx;
+   color: #696C7F;
+   margin: 40rpx 12rpx 12rpx 12rpx;
+ }
+
+ .fontFive {
+   font-size: 28rpx;
+   font-weight: 40rpx;
+   color: #696C7F;
+   margin: 40rpx 12rpx 12rpx 12rpx;
+ }
+
+ .fontFiveContent {
+   font-size: 28rpx;
+   color: #696C7F;
+   margin-left: 40rpx;
+ }
+
+ .conImg {
+   margin-top: 24rpx;
+ }
+
+ .conImg>image {
+   width: 202rpx;
+   height: 160rpx;
+   margin: 12rpx;
+ }

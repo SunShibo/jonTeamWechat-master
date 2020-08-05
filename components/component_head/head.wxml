@@ -1,0 +1,5 @@
+<view class='nav' style="padding-top:{{statusBar}}px;">
+  <view class='con' style="padding: {{navButtonTop-statusBar}}px 0; height: {{navButtonHeight}}px">
+    <view class="title">{{title}}</view>
+  </view>
+</view>

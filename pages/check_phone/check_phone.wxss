@@ -1,0 +1,49 @@
+/* pages/check_phone/check_phone.wxss */
+
+.phone-page {
+  padding: 30rpx 20rpx 0;
+}
+
+.p-title {
+  font-size: 35rpx;
+  margin-bottom: 10rpx;
+  font-weight: 600;
+}
+
+.p-tips {
+  font-size: 22rpx;
+  color: #838689;
+  margin-bottom: 200rpx;
+}
+
+.p-input {
+  border-bottom: 1rpx #eeeeee solid;
+  position: relative;
+  padding: 20rpx 0 20rpx 120rpx;
+  margin-bottom: 30rpx;
+}
+
+.p-input .input::before {
+  content: '+86';
+  display: inline-block;
+  color: #8b8b8b;
+  position: absolute;
+  left: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.phone-page .next-btn {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  position: relative;
+  background-color: #3C59C1;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}

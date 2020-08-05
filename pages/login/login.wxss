@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-page .logo {
+  width: 100%;
+}
+
+
+.login-page .login_btn {
+  width: 90%;
+  margin: 50rpx auto 30rpx;
+  border-radius: 0;
+  position: relative;
+  background-color: #4BAA34;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_btn image {
+  width: 35rpx;
+  height: 30rpx;
+}
+
+.login_btn .btn_text {
+  padding-left: 20rpx;
+}
+
+.login-phone {
+  color: #4BAA34;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
